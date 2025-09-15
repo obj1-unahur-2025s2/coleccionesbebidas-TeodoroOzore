@@ -42,4 +42,12 @@ describe "test de tito" {
       assert.equals(12.67, tito.velocidad())
     }
 
+    test "Tito coosume un coctel de whisky, terere, agua saborizada de whisky" {
+        aguaSaborizada.saborizar(whisky)
+        coctel.agregar(aguaSaborizada)
+        coctel.agregar(whisky)
+        coctel.agregar(terere)
+        assert.equals(0.9**20 * 2 * (1+0.9**5), coctel.rendimiento(60))
+    }
+
 }
