@@ -50,7 +50,7 @@ object coctel {
   method agregar(unIngrediente) {
     ingredientes.add(unIngrediente)
   }
-  method rendimiento(cantidad) = 
+  method rendimiento(cantidad) = 0
 }
 
 object manzana {
